@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --yellow: #50A060;
+  --silver: #d4d4dc;
+  --gray-dark: #393f4d;
+  --gray: #494d5f;
+  --dark: #1d1e22;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.filter-buttons {
+  margin: 10px 0;
+}
+
+.filter-buttons button {
+  margin: 0 5px;
+  cursor: pointer;
+  background-color: rgba(51, 51, 51, 0.05);
+  border-radius: 8px;
+  color: #333333;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  padding: 10px 12px;
+  text-align: center;
+  transition: all 200ms;
+  vertical-align: baseline;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  /* box-shadow: rgba(39, 174, 96, .15) 0 4px 9px; */
+}
+
+.filter-buttons button:hover {
+  transform: scale(1.05);
+}
+
+
+.filter-buttons .active {
+  background-color: #50A060;
+  /* color: rgb(246, 246, 246); */
+  border: 2px solid  #1d1e22;
+}
+
+.filter-buttons .active:hover {
+  /* background-color: #3b8c4b; */
+  background-color: #1e8449;
+  box-shadow: rgba(39, 174, 96, .2) 0 6px 12px;
+}
+
+
+.college-list {
+  text-align: center;
+}
+
+/* 
+.college-card {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin: 10px;
+  width: 300px;
+  cursor: pointer;
+}
+
+.college-image {
+  width: 100%;
+  height: auto;
+}
+
+.college-details {
+  padding: 20px;
+} */
